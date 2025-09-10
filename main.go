@@ -41,7 +41,7 @@ func sendToSocket(message string) {
 	// Zum Anzeigen im Terminal aktivieren
     // fmt.Println("Sende an Socket:", message)
 
-    cmd := exec.Command("socat", "-", "UNIX-CONNECT:wirebot.sock")
+    cmd := exec.Command("socat", "-", "UNIX-CONNECT:wired-bot.sock")
 
     stdin, err := cmd.StdinPipe()
     if err != nil {
