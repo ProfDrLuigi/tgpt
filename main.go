@@ -36,7 +36,7 @@ func sendToSocket(message string) {
     message = strings.ReplaceAll(message, "\n", "<br>")
 
     // Anfang <n> und Ende </n> hinzufügen
-    message = "<n>" + message + "</n>"
+    message = "<div>" + message + "</div>"
 
 	// Zum Anzeigen im Terminal aktivieren
     // fmt.Println("Sende an Socket:", message)
